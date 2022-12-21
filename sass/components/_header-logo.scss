@@ -1,4 +1,10 @@
 .logo{
+
+    @media screen and (max-width:480px) {
+            display: block;
+            // margin: 16px 0;
+        }
+
     &__label {
         font-family: 'Raleway';
         font-style: normal;
@@ -14,6 +20,5 @@
     }
 
     &--geometry{
-        
     }
 }

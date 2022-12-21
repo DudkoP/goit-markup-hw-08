@@ -1,8 +1,15 @@
 .header{
+
     &__content{
         display: flex;
         align-items: center;
         @extend %container;
+
+        @media screen and (max-width:480px) {
+            width: 480px;
+            height: 60px;
+            margin: 0;
+        }
     }
 
     &__navigation{

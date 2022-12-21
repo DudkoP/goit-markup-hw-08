@@ -1,0 +1,31 @@
+.header-button{
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    margin:0;
+    padding:0;
+
+    @media screen and (max-width:480px) {
+            margin-left: auto;
+        }
+
+    &__icon{
+        
+
+        &--cross{
+
+            display: none;
+
+            .header-button.is-open &{
+                display: block;
+            }
+        }
+
+        &--menu{
+            
+            .header-button.is-open &{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,6 +1,11 @@
 .header-nav{
     display: flex;
 
+
+    @media screen and (max-width:480px) {
+            display: none;
+        }
+        
     &__item{
         font-weight: 500;
         font-size: 14px;
