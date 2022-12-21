@@ -1,0 +1,42 @@
+.advantages{
+    @extend %container;
+
+    &__list{
+        display: flex;
+    }
+
+    &__item{
+        display: inline-block;
+        width: 270px;
+    }
+
+    &__item:not(:last-child){
+        margin-right: 30px;
+    }
+
+    &__card{
+        @include centeredFlex(flex);
+        width: 270px;
+        height: 140px;
+        background-color: $secondarybgcolor;
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $maincolor;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    &__details{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $secondarycolor;
+    }
+}

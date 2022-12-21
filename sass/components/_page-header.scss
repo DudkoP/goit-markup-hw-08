@@ -1,0 +1,12 @@
+.header{
+    &__content{
+        display: flex;
+        align-items: center;
+        @extend %container;
+    }
+
+    &__navigation{
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,10 @@
+.main {
+    border-top: 1px solid #ECECEC;
+
+    &__section{
+    }
+
+    &__content{
+        @extend %container;
+    }
+}
