@@ -1,17 +1,34 @@
 .advantages{
     @extend %container;
+    @media screen and (max-width:480px) {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
     &__list{
         display: flex;
+        @media screen and (max-width:480px) {
+                display: block;
+            }
     }
 
     &__item{
         display: inline-block;
         width: 270px;
+
+        @media screen and (max-width:480px) {
+                display: block;
+                width: 100%;
+            }
     }
 
     &__item:not(:last-child){
         margin-right: 30px;
+
+        @media screen and (max-width:480px) {
+                margin-bottom: 30px;
+            }
     }
 
     &__card{
@@ -19,6 +36,10 @@
         width: 270px;
         height: 140px;
         background-color: $secondarybgcolor;
+
+        @media screen and (max-width:480px) {
+                width: 100%;
+            }
     }
 
     &__title{
@@ -30,6 +51,10 @@
         color: $maincolor;
         padding-top: 30px;
         padding-bottom: 10px;
+
+        @media screen and (max-width:480px) {
+                text-align: center;
+            }
     }
 
     &__details{

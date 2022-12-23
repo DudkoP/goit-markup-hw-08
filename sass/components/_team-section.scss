@@ -1,6 +1,11 @@
 .team-block{
     background-color: $secondarybgcolor;
 
+    @media screen and (max-width:480px) {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
     &__topic{
         text-align: center;
         padding-bottom: 50px;
@@ -9,11 +14,25 @@
         line-height: 1.16;
         letter-spacing: 0.03em;
         color: $maincolor;
+
+        @media screen and (max-width:480px) {
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 1.178;
+                text-align: center;
+                padding-bottom: 30px;
+            }
     }
 
     &__list{
         display: flex;
         justify-content: center;
+
+        @media screen and (max-width:480px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
     }
 
     &__item{
@@ -23,10 +42,19 @@
 
         &:not(:last-child){
             margin-right: 30px;
+
+            @media screen and (max-width:480px) {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
         }
     }
 
     &__image{
         display: block;
+
+        @media screen and (max-width:480px) {
+                width: 450px;
+            }
     }
 }

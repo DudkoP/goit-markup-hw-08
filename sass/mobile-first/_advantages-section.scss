@@ -1,0 +1,45 @@
+.advantages {
+    @extend %container-mobile;
+    padding-top:60px;
+    padding-bottom: 60px;
+
+    // &__list{
+    // }
+
+    &__item{
+        
+        &:not(:last-child){
+            padding-bottom: 30px;
+        }
+    }
+
+    &__card{
+        @include centeredFlex();
+        height: 120px;
+        background-color: $secondarybgcolor;
+        border-radius: 4px
+    }
+
+    // &__icon{
+    // }
+
+    &__title{
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $maincolor;
+    }
+
+    &__details{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $secondarycolor;
+    }
+}
