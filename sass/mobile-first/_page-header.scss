@@ -18,6 +18,7 @@
        display: flex;
        justify-content: space-between;
        align-items: center;
+       height: 80px;
     }
 
     &__navigation{
@@ -62,31 +63,74 @@
     }
 
     &__link{
+        position: relative;
         font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.142;
         letter-spacing: 0.02em;
         color: $maincolor;
+        padding: 32px 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+            &:focus,
+            &:hover,
+            &--current {
+                color: $accentcolor;
+            }
+        
+            &--current::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                background-color: $accentcolor;
+            }
     }
 }
+
+
+
 
 .header-contact{
     margin-left: 94px;
 
     &__item{
-        display: flex;
     }
 
     &__link{
+        display: flex;
+        align-items: center;
         color: $secondarycolor;
         font-weight: 500;
         font-size: 12px;
-        line-height: 14px;
+        line-height: 1.166;
         letter-spacing: 0.02em;
+        margin-bottom: 10px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+            &:hover,
+            &:focus {
+                color: $accentcolor;
+            }
+        
+            &:visited {
+                color: $secondarycolor;
+            }
     }   
 
     &__icon{
+        height: 14px;
+        width: 14px;
         margin-right: 8px;
         fill: $secondarycolor;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+            .header-contact__link:focus &,
+            .header-contact__link:hover & {
+                fill: $accentcolor;
+            }
     }
 }
