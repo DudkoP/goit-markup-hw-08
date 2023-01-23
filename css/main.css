@@ -604,6 +604,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 92px;
+  width: 210px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   -webkit-transition-property: fill, border;

@@ -30,6 +30,8 @@
 
     &__link{
         @include centeredFlex(flex);
+        height: 92px;
+        width: 210px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
         transition-property: fill, border;
@@ -40,6 +42,7 @@
         &:focus {
             border: 1px solid $accentcolor;
         }
+
     }
 
     &__logo{
